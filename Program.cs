@@ -1,5 +1,6 @@
 using Seila.Components;
 using Seila.Configs;
+using Seila.DAO;
 using Seila.Model;
 
 var builder = WebApplication.CreateBuilder(args);

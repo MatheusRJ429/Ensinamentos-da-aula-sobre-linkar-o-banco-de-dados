@@ -1,5 +1,7 @@
 ﻿using Seila.Configs;
 using Seila.DAO;
+using Seila.Components;
+using Seila.Model;
 
 namespace Seila.Model
 {
