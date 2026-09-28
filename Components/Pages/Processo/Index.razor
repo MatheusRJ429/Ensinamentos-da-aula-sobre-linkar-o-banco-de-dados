@@ -1,6 +1,6 @@
 ﻿@page "/processos"
 @rendermode InteractiveServer
-@inject ProcessoDAO dao;
+@inject ProcessoDAO dao
 
 <PageTitle>Processos - Sistema de Controle de Processos</PageTitle>
 
@@ -8,6 +8,11 @@
     <div>
         <h2 class="fw-bold mb-1">Consulta de Processos</h2>
     </div>
+
+    <a href="/processos/cadastro" class="btn btn-primary">
+        <i class="bi bi-plus-lg"></i>
+        Novo Processo
+    </a>
 </div>
 
 <div class="custom-table-card">
@@ -41,20 +46,22 @@
                                 <a href="#" class="btn btn-light border text-primary" title="Editar">
                                     <i class="bi bi-pencil"></i>
                                 </a>
+
                                 <a href="#" class="btn btn-light border text-danger" title="Excluir">
                                     <i class="bi bi-trash"></i>
                                 </a>
                             </div>
                         </td>
                     </tr>
-                }        
+                }
             </tbody>
         </table>
+
     </div>
 </div>
 
 @code {
-     private List<Processo>? processos;
+    private List<Processo> processos = new();
 
     protected override void OnInitialized()
     {
