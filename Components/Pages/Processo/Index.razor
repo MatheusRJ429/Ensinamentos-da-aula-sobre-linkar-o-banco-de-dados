@@ -4,6 +4,7 @@
 
 <PageTitle>Processos - Sistema de Controle de Processos</PageTitle>
 
+
 <div class="d-flex justify-content-between align-items-center mb-4">
     <div>
         <h2 class="fw-bold mb-1">Consulta de Processos</h2>
@@ -17,7 +18,6 @@
 
 <div class="custom-table-card">
     <div class="table-responsive">
-
         <table class="table align-middle">
             <thead>
                 <tr>
@@ -43,11 +43,15 @@
                         </td>
                         <td class="text-end">
                             <div class="btn-group btn-group-sm">
-                                <a href="#" class="btn btn-light border text-primary" title="Editar">
+                                <a href="@($"/processos/editar/{p.Id}")"
+                                       class="btn btn-light border text-primary"
+                                       title="Editar">
                                     <i class="bi bi-pencil"></i>
                                 </a>
 
-                                <a href="#" class="btn btn-light border text-danger" title="Excluir">
+                                <a href="#"
+                                       class="btn btn-light border text-danger"
+                                       title="Excluir">
                                     <i class="bi bi-trash"></i>
                                 </a>
                             </div>
@@ -56,7 +60,6 @@
                 }
             </tbody>
         </table>
-
     </div>
 </div>
 
